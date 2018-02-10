@@ -1,3 +1,7 @@
 <resources>
-    <string name="app_name">Twitter Nurtelekom</string>
+    <string name="app_name">Twitter</string>
+    <string name="login">Log in with Twitter</string>
+    <string name="whats_happening">What\'s happening?</string>
+    <string name="done">Done</string>
+    <string name="create_tweet">Create tweet</string>
 </resources>

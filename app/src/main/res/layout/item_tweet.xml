@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fresco="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <RelativeLayout android:id="@+id/head_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:padding="@dimen/large_spacing">
+
+        <com.facebook.drawee.view.SimpleDraweeView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/avatar_size"
+            android:layout_height="@dimen/avatar_size"
+            android:layout_marginEnd="@dimen/normal_spacing"
+            fresco:placeholderImage="@color/colorPrimary"
+            fresco:roundedCornerRadius="@dimen/rounded_corner_radius" />
+
+        <TextView
+            android:id="@+id/name"
+            style="@style/SingleLineTextViewStyleNormal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/avatar"
+            android:textAppearance="?attr/textAppearanceListItem"
+            android:textSize="@dimen/medium_text"
+            android:textStyle="bold"
+            tools:text="Author name" />
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/name"
+            android:layout_toEndOf="@id/avatar"
+            android:textSize="@dimen/small_text"
+            tools:text="14:06 20.08.2016" />
+
+    </RelativeLayout>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="@dimen/large_spacing"
+        android:paddingEnd="@dimen/large_spacing"
+        android:paddingLeft="@dimen/large_spacing"
+        android:paddingRight="@dimen/large_spacing"
+        android:paddingStart="@dimen/large_spacing"
+        android:paddingTop="@dimen/large_spacing"
+        android:textColor="@color/black"
+        android:textSize="@dimen/normal_text"
+        tools:text="Lorem Ipsum Header Lorem Ipsum Header Lorem Ipsum Header Lorem Ipsum HeaderLorem Ipsum Header " />
+</LinearLayout>

@@ -5,12 +5,12 @@ import android.arch.persistence.room.Database
 import android.arch.persistence.room.Room
 import android.arch.persistence.room.RoomDatabase
 import android.content.Context
-import com.twitternurtelekom.db.dao.TwitDao
-import com.twitternurtelekom.model.Twit
+import com.twitternurtelekom.db.dao.TweetDao
+import com.twitternurtelekom.model.Tweet
 
 
-@Database(entities = [Twit::class],
-        version = 30, exportSchema = false)
+@Database(entities = [Tweet::class],
+        version = 1, exportSchema = false)
 abstract class TwitterDatabase : RoomDatabase() {
     companion object {
         private val DATABASE_NAME = "twitternurtelekom-db"
@@ -36,5 +36,5 @@ abstract class TwitterDatabase : RoomDatabase() {
         }
     }
 
-    abstract fun twitDao(): TwitDao
+    abstract fun tweetDao(): TweetDao
 }

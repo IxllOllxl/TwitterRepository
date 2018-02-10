@@ -4,12 +4,14 @@ buildscript {
     ext.minSdkVersion = 17
 
     ext.buildNumber = System.getenv("BUILD_NUMBER") ?: 0
-    ext.googleServiceVersion = '11.8.0'
     ext.architectureVersion = '1.1.0'
-    ext.audioRecLibVersion = '1.5.2'
     ext.supportVersion = '27.0.2'
+    ext.retrofitVersion = '2.3.0'
+    ext.okhttpVersion = '3.8.0'
     ext.kotlin_version = '1.2.21'
+    ext.parcelLibVersion = '1.1.9'
     ext.dagger = '2.14.1'
+    ext.twitter = '3.1.1'
     ext.room = '1.1.0-alpha1'
 
     repositories {
