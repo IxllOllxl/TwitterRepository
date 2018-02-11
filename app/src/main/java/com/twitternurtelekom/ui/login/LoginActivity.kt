@@ -32,6 +32,7 @@ class LoginActivity : AppCompatActivity() {
         override fun success(result: Result<TwitterSession>) {
             setToken(result.data.authToken.token)
             TapeActivity.start(this@LoginActivity)
+            finish()
         }
 
         override fun failure(exception: TwitterException) {
