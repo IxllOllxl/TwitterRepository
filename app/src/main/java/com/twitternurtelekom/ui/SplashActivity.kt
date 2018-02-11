@@ -15,5 +15,6 @@ class SplashActivity : AppCompatActivity() {
         else {
             TapeActivity.start(this)
         }
+        finish()
     }
 }
